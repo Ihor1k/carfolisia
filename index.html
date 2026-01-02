@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carfolisia</title>
+    <link rel="stylesheet" href="./src/scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="menu-overlay"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-logo">
+            <a href="/"
+              ><img
+                src="./src/images/header-logo.png"
+                width="147"
+                height="38"
+                alt="Logo"
+            /></a>
+          </div>
+          <div class="header-logo-mobile">
+            <a href="/"
+              ><img
+                src="./src/images/header-logo.png"
+                width="93"
+                height="24"
+                alt="Logo"
+            /></a>
+          </div>
+
+          <div class="burger">
+            <img src="./src/images/burger.svg" alt="" />
+          </div>
+
+          <div class="header-menu">
+            <div class="burger-close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"
+                  fill="#000"
+                />
+              </svg>
+            </div>
+            <a href="#hero" class="header-link">Home</a>
+            <a href="#services" class="header-link">Services</a>
+            <a href="#approach" class="header-link">Approach</a>
+            <a href="#clients" class="header-link">Clients</a>
+            <a href="#contact" class="header-link">Contact</a>
+          </div>
+
+          <div class="header-buttons mobile-visible">
+            <button class="header-button">Get In Touch
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 7L17 17M17 17V7M17 17H7" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="popup-overlay" id="popup">
+      <div class="popup">
+        <div class="popup-block">
+          <div class="popup-inner">
+            <div class="popup-context">
+              <h3>Request a Consultation</h3>
+              <p class="pop-text">
+                Provide your details and a brief overview of your current challenges
+              </p>
+            </div>
+  
+            <form class="popup-form" id="joinForm">
+              <div class="form-field">
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-field">
+                 <input type="text" id="company" name="company" placeholder="Company name" required/>
+              </div>
+              <!-- <div class="form-field">
+                 <input type="text" id="jurisdiction" name="jurisdiction" placeholder="Jurisdiction"/>
+              </div> -->
+              <div class="form-field">
+                <input type="email" id="email" name="email" placeholder="E-mail" required />
+              </div>
+              <!-- <div class="form-field">
+                <input type="tel" id="phone" name="phone" placeholder="Phone (optional)" required />
+              </div> -->
+              
+              <div class="form-field">
+                <textarea id="message" name="message" placeholder="Description of your financial setup and objectives" rows="3" required></textarea>
+              </div>
+              <div class="popup-wrapper">
+                <button type="submit" class="popup-btn">Talk to Us<span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 7L17 17M17 17V7M17 17H7" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+ 
+        <span class="close-popup"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 13L13 1M1 1L13 13" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></span>
+      </div>
+    </div>
+
+    <section id="hero" class="hero">
+      <div class="container">
+        <img src="./src/images/hero-bg.png" alt="" class="hero-img">
+        <img src="./src/images/hero-mobile.png" alt="" class="hero-img-mobile">
+        <div class="hero-line">
+          <p class="hero-suptext">We build and maintain</p>
+          <h1 class="hero-title">The Systems Digital</h1>
+        </div>
+        <h1 class="hero-subtitle"><span class="green">Marketing</span> Runs On </h1>
+        <p class="hero-text">Carfolisia designs and supports the technical foundation and marketing activities</p>
+        <button class="hero-button">Talk to Us
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 7L17 17M17 17V7M17 17H7" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-inner">
+          <div class="about-content">
+            <p class="about-suptitle">About us</p>
+            <h2 class="about-title">What <span class="bg">Carfolisia</span> Does</h2>
+          </div>
+          <div class="about-context">
+            <h4 class="about-subtext">Carfolisia works with businesses that treat digital marketing as an operational function rather than a set of isolated actions.</h4>
+            <p class="about-text">We support both the systems that marketing depends on and the execution required to generate demand.</p>
+            <p class="about-text">On the technical side, we help design, maintain, and improve the infrastructure that supports tracking, analytics, data flow, and operational stability. </p>
+            <p class="about-text">Our objective is to make digital marketing more predictable, manageable, and resilient as businesses grow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="point">
+      <div class="container">
+        <img class="point-bg" src="./src/images/point-bg.png" alt="">
+        <img src="./src/images/point-mobile.png" alt="" class="point-mobile">
+        <div class="point-wrapper">
+          <div class="point-block">
+            <p class="point-suptitle">Common failure points</p>
+            <h3 class="point-title">Where Digital Marketing Often Breaks</h3>
+            <p class="point-text">Digital marketing rarely fails due to lack of activity</p>
+            <div class="point-list">
+              <div class="point-item">
+                <h5 class="point-item-title">Marketing activities running on weak or disconnected systems</h5>
+                <p class="point-item-text">Marketing efforts rely on setups that were never designed for long-term use or increasing volume</p>
+              </div>
+              <div class="point-item">
+                <h5 class="point-item-title">Limited visibility into performance and results</h5>
+                <p class="point-item-text">Data is fragmented across platforms, making it difficult to understand what actually drives outcomes</p>
+              </div>
+              <div class="point-item">
+                <h5 class="point-item-title">Execution that does not scale</h5>
+                <p class="point-item-text">What works at low volume becomes inefficient, unstable, or costly as activity increases</p>
+              </div>
+              <div class="point-item">
+                <h5 class="point-item-title">Lack of long-term structure</h5>
+                <p class="point-item-text">Marketing decisions become reactive rather than guided by a clear operating 
+                  model</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="service">
+      <div class="container">
+        <div class="service-content">
+          <h3 class="service-title">two complementary service areas</h3>
+          <p class="service-suptitle">Our services</p>
+        </div>
+        <div class="service-list">
+          <div class="service-item">
+              <h5 class="service-item-title"><span class="bg">Systems & Infrastructure </span></h5>
+              <div class="service-inner">
+                <div class="service-inner-item">
+                  <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                      <path d="M4 24.007L23.2845 33.6492C23.5468 33.7804 23.678 33.846 23.8156 33.8718C23.9375 33.8946 24.0625 33.8946 24.1844 33.8718C24.322 33.846 24.4532 33.7804 24.7155 33.6492L44 24.007M4 34.007L23.2845 43.6492C23.5468 43.7804 23.678 43.846 23.8156 43.8718C23.9375 43.8946 24.0625 43.8946 24.1844 43.8718C24.322 43.846 24.4532 43.7804 24.7155 43.6492L44 34.007M4 14.007L23.2845 4.36474C23.5468 4.23355 23.678 4.16796 23.8156 4.14215C23.9375 4.11928 24.0625 4.11928 24.1844 4.14215C24.322 4.16796 24.4532 4.23355 24.7155 4.36474L44 14.007L24.7155 23.6492C24.4532 23.7804 24.322 23.846 24.1844 23.8718C24.0625 23.8946 23.9375 23.8946 23.8156 23.8718C23.678 23.846 23.5468 23.7804 23.2845 23.6492L4 14.007Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="service-inner-content">
+                    <p class="service-inner-title">Marketing Systems & Infrastructure</p>
+                    <p class="service-inner-text">Design and maintenance of the technical foundation that supports tracking, analytics, attribution, and data integrity</p>
+                  </div>
+                </div>
+                <div class="service-inner-item">
+                  <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                      <path d="M30 36C30 39.3137 32.6863 42 36 42C39.3137 42 42 39.3137 42 36C42 32.6863 39.3137 30 36 30C32.6863 30 30 32.6863 30 36ZM30 36C25.2261 36 20.6477 34.1036 17.2721 30.7279C13.8964 27.3523 12 22.7739 12 18M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 18V42" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="service-inner-content">
+                    <p class="service-inner-title">Digital Systems Integration</p>
+                    <p class="service-inner-text">Connection of marketing tools, platforms, and internal systems into a single operational environment to improve visibility and control</p>
+                  </div>
+                </div>
+                <div class="service-inner-item">
+                  <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                      <path d="M18.7901 38.7422L19.959 41.3711C20.3065 42.1537 20.8735 42.8186 21.5914 43.2852C22.3093 43.7518 23.1472 44.0001 24.0034 44C24.8596 44.0001 25.6975 43.7518 26.4154 43.2852C27.1333 42.8186 27.7004 42.1537 28.0479 41.3711L29.2167 38.7422C29.6328 37.8094 30.3328 37.0317 31.2168 36.52C32.1063 36.0069 33.1354 35.7883 34.1568 35.8956L37.0168 36.2C37.8681 36.2901 38.7273 36.1312 39.4901 35.7427C40.253 35.3541 40.8867 34.7526 41.3145 34.0111C41.7429 33.27 41.947 32.4206 41.902 31.5658C41.857 30.711 41.5649 29.8876 41.0612 29.1956L39.3679 26.8689C38.7649 26.0343 38.4427 25.0296 38.4479 24C38.4477 22.9732 38.7729 21.9727 39.3768 21.1422L41.0701 18.8156C41.5738 18.1235 41.8659 17.3001 41.9109 16.4453C41.9558 15.5906 41.7518 14.7411 41.3234 14C40.8956 13.2585 40.2619 12.657 39.499 12.2685C38.7362 11.8799 37.877 11.7211 37.0256 11.8111L34.1656 12.1156C33.1443 12.2228 32.1152 12.0042 31.2256 11.4911C30.3399 10.9765 29.6398 10.1947 29.2256 9.25778L28.0479 6.62889C27.7004 5.84634 27.1333 5.18143 26.4154 4.7148C25.6975 4.24816 24.8596 3.99986 24.0034 4C23.1472 3.99986 22.3093 4.24816 21.5914 4.7148C20.8735 5.18143 20.3065 5.84634 19.959 6.62889L18.7901 9.25778C18.3759 10.1947 17.6758 10.9765 16.7901 11.4911C15.9005 12.0042 14.8714 12.2228 13.8501 12.1156L10.9812 11.8111C10.1299 11.7211 9.27067 11.8799 8.50783 12.2685C7.74498 12.657 7.11123 13.2585 6.68342 14C6.25506 14.7411 6.05098 15.5906 6.09595 16.4453C6.14092 17.3001 6.433 18.1235 6.93675 18.8156L8.63008 21.1422C9.23397 21.9727 9.55916 22.9732 9.55897 24C9.55916 25.0268 9.23397 26.0273 8.63008 26.8578L6.93675 29.1844C6.433 29.8765 6.14092 30.6999 6.09595 31.5547C6.05098 32.4094 6.25506 33.2589 6.68342 34C7.11165 34.7411 7.74547 35.3423 8.50821 35.7308C9.27095 36.1193 10.1299 36.2784 10.9812 36.1889L13.8412 35.8844C14.8625 35.7772 15.8916 35.9958 16.7812 36.5089C17.6703 37.022 18.3736 37.804 18.7901 38.7422Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M23.9998 30C27.3136 30 29.9998 27.3137 29.9998 24C29.9998 20.6863 27.3136 18 23.9998 18C20.6861 18 17.9998 20.6863 17.9998 24C17.9998 27.3137 20.6861 30 23.9998 30Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="service-inner-content">
+                    <p class="service-inner-title">Technical Optimisation & Scalability</p>
+                    <p class="service-inner-text">Identification and optimisation of system limitations to support higher volumes of traffic, leads, and operational complexity</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="service-item" style="background: #29415D;">
+              <h5 class="service-item-title white">Marketing Services</h5>
+              <div class="service-inner">
+                <div class="service-inner-item">
+                  <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                      <path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M24 36C30.6274 36 36 30.6274 36 24C36 17.3726 30.6274 12 24 12C17.3726 12 12 17.3726 12 24C12 30.6274 17.3726 36 24 36Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M24 28C26.2091 28 28 26.2091 28 24C28 21.7909 26.2091 20 24 20C21.7909 20 20 21.7909 20 24C20 26.2091 21.7909 28 24 28Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="service-inner-content">
+                    <p class="service-inner-title grey">Performance Marketing Support</p>
+                    <p class="service-inner-text white">Support for performance-oriented marketing activities with a focus on clarity, control, and measurable outcomes</p>
+                  </div>
+                </div>
+                <div class="service-inner-item">
+                  <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                      <path d="M44 42V38C44 34.2723 41.4505 31.1401 38 30.252M31 6.58152C33.9318 7.76829 36 10.6426 36 14C36 17.3574 33.9318 20.2317 31 21.4185M34 42C34 38.2725 34 36.4087 33.391 34.9385C32.5791 32.9783 31.0217 31.4209 29.0615 30.609C27.5913 30 25.7275 30 22 30H16C12.2725 30 10.4087 30 8.93853 30.609C6.97831 31.4209 5.42092 32.9783 4.60896 34.9385C4 36.4087 4 38.2725 4 42M27 14C27 18.4183 23.4183 22 19 22C14.5817 22 11 18.4183 11 14C11 9.58172 14.5817 6 19 6C23.4183 6 27 9.58172 27 14Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="service-inner-content">
+                    <p class="service-inner-title grey">Lead Generation</p>
+                    <p class="service-inner-text white">Structured lead generation initiatives designed to attract, qualify, and convert demand through digital channels</p>
+                  </div>
+                </div>
+                <div class="service-inner-item">
+                  <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                      <path d="M42 20H6M32 4V12M16 4V12M15.6 44H32.4C35.7603 44 37.4405 44 38.7239 43.346C39.8529 42.7708 40.7708 41.8529 41.346 40.7239C42 39.4405 42 37.7603 42 34.4V17.6C42 14.2397 42 12.5595 41.346 11.2761C40.7708 10.1471 39.8529 9.2292 38.7239 8.65396C37.4405 8 35.7603 8 32.4 8H15.6C12.2397 8 10.5595 8 9.27606 8.65396C8.14708 9.2292 7.2292 10.1471 6.65396 11.2761C6 12.5595 6 14.2397 6 17.6V34.4C6 37.7603 6 39.4405 6.65396 40.7239C7.2292 41.8529 8.14708 42.7708 9.27606 43.346C10.5595 44 12.2397 44 15.6 44Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="service-inner-content">
+                    <p class="service-inner-title grey">Marketing Campaign Execution</p>
+                    <p class="service-inner-text white">Planning and execution of marketing campaigns aligned with business objectives and supported by appropriate technical setup</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" class="how">
+      <div class="container">
+        <img class="how-bg" src="./src/images/how-bg.png" alt="">
+        <img src="./src/images/how-mobile.png" alt="" class="how-mobile">
+        <div class="how-block">
+          <div class="how-content">
+            <h3 class="how-title">How <span class="green">We Work</span> </h3>
+            <p class="how-text">Our approach combines system-level thinking with practical marketing execution</p>
+          </div>
+          <p class="how-suptitle">Proccess</p>
+        </div>
+        <div class="how-list">
+          <div class="how-item">
+            <p class="how-num">01</p>
+            <p class="how-item-text">Understand the business, systems, and objectives</p>
+          </div>
+          <div class="how-item">
+            <p class="how-num">02</p>
+            <p class="how-item-text">Define the balance between infrastructure and execution</p>
+          </div>
+          <div class="how-item">
+            <p class="how-num">03</p>
+            <p class="how-item-text">Implement systems and support marketing activities</p>
+          </div>
+          <div class="how-item">
+            <p class="how-num">04</p>
+            <p class="how-item-text">Refine structure and performance over <br>
+              time</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee">
+      <div class="marquee-track">
+        <span class="marquee-text">
+          Design • Integrate • Maintain • Optimise • Support • Execute • Scale •
+        </span>
+        <span class="marquee-text" aria-hidden="true">
+          Design • Integrate • Maintain • Optimise • Support • Execute • Scale •
+        </span>
+      </div>
+    </section>
+
+    <section id="clients" class="who">
+      <div class="container">
+        <div class="who-block">
+          <div class="who-content">
+            <h3 class="who-title">Who We Work With</h3>
+            <p class="who-text">Carfolisia works with businesses that rely on digital marketing and require clarity, structure, and consistency</p>
+          </div>
+          <p class="who-suptitle">Ideal client</p>
+        </div>
+
+        <div class="who-list">
+          <div class="who-item">
+            <div class="who-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                <path d="M64.1668 61.25V55.4167C64.1668 49.9805 60.4487 45.4127 55.4168 44.1176M45.2085 9.59805C49.4841 11.3288 52.5002 15.5205 52.5002 20.4167C52.5002 25.3128 49.4841 29.5046 45.2085 31.2353M49.5835 61.25C49.5835 55.814 49.5835 53.096 48.6954 50.952C47.5113 48.0934 45.2401 45.8222 42.3815 44.6381C40.2375 43.75 37.5195 43.75 32.0835 43.75H23.3335C17.8975 43.75 15.1795 43.75 13.0355 44.6381C10.1769 45.8222 7.90566 48.0934 6.72157 50.952C5.8335 53.096 5.8335 55.814 5.8335 61.25M39.3752 20.4167C39.3752 26.86 34.1518 32.0833 27.7085 32.0833C21.2652 32.0833 16.0418 26.86 16.0418 20.4167C16.0418 13.9733 21.2652 8.75 27.7085 8.75C34.1518 8.75 39.3752 13.9733 39.3752 20.4167Z" stroke="#7F8D9E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="who-item-text">Operational marketing teams</p>
+            <p class="who-hidden">Companies that view marketing as an ongoing operational function</p>
+          </div>
+          <div class="who-item">
+            <div class="who-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                <path d="M58.3332 58.3333V37.9167M34.9998 58.3333V29.1667M11.6665 58.3333L11.6665 46.6667M39.1026 14.6636L54.1773 20.3165M31.4963 15.7527L15.1672 27.9995M61.4268 18.7814C63.1353 20.49 63.1353 23.26 61.4268 24.9686C59.7182 26.6771 56.9481 26.6771 55.2396 24.9686C53.531 23.26 53.531 20.49 55.2396 18.7814C56.9481 17.0729 59.7182 17.0729 61.4268 18.7814ZM14.7601 27.5314C16.4686 29.2399 16.4686 32.01 14.7601 33.7186C13.0516 35.4271 10.2815 35.4271 8.57291 33.7186C6.86437 32.01 6.86437 29.2399 8.57291 27.5314C10.2815 25.8229 13.0516 25.8229 14.7601 27.5314ZM38.0934 10.0314C39.802 11.74 39.802 14.51 38.0934 16.2186C36.3849 17.9271 33.6148 17.9271 31.9062 16.2186C30.1977 14.51 30.1977 11.74 31.9062 10.0314C33.6148 8.32286 36.3849 8.32286 38.0934 10.0314Z" stroke="#7F8D9E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="who-item-text">Multi-tool or multi-platform environments</p>
+            <p class="who-hidden">Businesses managing several platforms or systems that need coordination</p>
+          </div>
+          <div class="who-item">
+            <div class="who-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                <path d="M61.25 61.25H18.0833C14.8164 61.25 13.1829 61.25 11.9351 60.6142C10.8374 60.0549 9.94506 59.1626 9.3858 58.0649C8.75 56.8171 8.75 55.1836 8.75 51.9167V8.75M20.4167 30.625V51.0417M33.5417 16.0417V51.0417M46.6667 30.625V51.0417M59.7917 16.0417V51.0417" stroke="white" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>  
+            <p class="who-item-text">Performance-driven decision making</p>
+            <p class="who-hidden">Teams that depend on reliable data and measurable <br> outcomes</p>
+          </div>
+          <div class="who-item">
+            <div class="who-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                <path d="M61.25 40.8333V47.25C61.25 52.1505 61.25 54.6007 60.2963 56.4724C59.4574 58.1188 58.1188 59.4574 56.4724 60.2963C54.6007 61.25 52.1505 61.25 47.25 61.25H40.8333M29.1667 8.75H22.75C17.8495 8.75 15.3993 8.75 13.5276 9.70369C11.8812 10.5426 10.5426 11.8812 9.70369 13.5276C8.75 15.3993 8.75 17.8495 8.75 22.75V29.1667M43.75 26.25L61.25 8.75M61.25 8.75H43.75M61.25 8.75V26.25M26.25 43.75L8.75 61.25M8.75 61.25H26.25M8.75 61.25L8.75 43.75" stroke="white" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="who-item-text">Growth-oriented organisations</p>
+            <p class="who-hidden">Companies preparing for scale or already experiencing increased complexity</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container">
+        <img src="./src/images/why-bg.png" alt="" class="why-bg"> 
+        <img class="why-mobile" src="./src/images/why-mobie-tg.jpg" alt="">
+        <div class="why-wrapper">
+          <div class="why-block">
+            <h4 class="why-title">Why Carfolisia</h4>
+            <p class="why-text">Carfolisia is engaged when digital marketing needs to operate as a controlled system rather than a collection of disconnected actions</p>
+            <div class="why-list">
+              <div class="why-item">
+                <div class="why-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <path d="M4 24.007L23.2845 33.6492C23.5468 33.7804 23.678 33.846 23.8156 33.8718C23.9375 33.8946 24.0625 33.8946 24.1844 33.8718C24.322 33.846 24.4532 33.7804 24.7155 33.6492L44 24.007M4 34.007L23.2845 43.6492C23.5468 43.7804 23.678 43.846 23.8156 43.8718C23.9375 43.8946 24.0625 43.8946 24.1844 43.8718C24.322 43.846 24.4532 43.7804 24.7155 43.6492L44 34.007M4 14.007L23.2845 4.36474C23.5468 4.23355 23.678 4.16796 23.8156 4.14215C23.9375 4.11928 24.0625 4.11928 24.1844 4.14215C24.322 4.16796 24.4532 4.23355 24.7155 4.36474L44 14.007L24.7155 23.6492C24.4532 23.7804 24.322 23.846 24.1844 23.8718C24.0625 23.8946 23.9375 23.8946 23.8156 23.8718C23.678 23.846 23.5468 23.7804 23.2845 23.6492L4 14.007Z" stroke="#747474" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="why-content">
+                  <p class="why-item-title">System-level focus</p>
+                  <p class="why-item-text">We work on the technical and operational foundation that marketing depends on, ensuring stability, measurability, and long-term reliability</p>
+                </div>
+              </div>
+              <div class="why-item">
+                <div class="why-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <path d="M30 36C30 39.3137 32.6863 42 36 42C39.3137 42 42 39.3137 42 36C42 32.6863 39.3137 30 36 30C32.6863 30 30 32.6863 30 36ZM30 36C25.2261 36 20.6477 34.1036 17.2721 30.7279C13.8964 27.3523 12 22.7739 12 18M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 18V42" stroke="#747474" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="why-content">
+                  <p class="why-item-title">Marketing execution with structure</p>
+                  <p class="why-item-text">We work on the technical and operational foundation that marketing depends on, ensuring stability, measurability, and long-term reliability</p>
+                </div>
+              </div>
+              <div class="why-item">
+                <div class="why-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <path d="M30 8V4M30 32V28M16 18H20M40 18H44M35.6 23.6L38 26M35.6 12.4L38 10M6 42L24 24M24.4 12.4L22 10" stroke="#747474" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="why-content">
+                  <p class="why-item-title">Designed for growth conditions</p>
+                  <p class="why-item-text">Our approach accounts for increasing volume, complexity, and operational pressure</p>
+                </div>
+              </div>
+              <div class="why-item">
+                <div class="why-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <path d="M34 10.2488C38.2427 13.3399 41 18.3469 41 23.998C41 33.3868 33.3888 40.998 24 40.998H23M14 37.7472C9.75733 34.6561 7 29.6491 7 23.998C7 14.6092 14.6112 6.998 24 6.998H25M26 44.798L22 40.798L26 36.798M22 11.198L26 7.198L22 3.198" stroke="#747474" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="why-content">
+                  <p class="why-item-title">Long-term continuity</p>
+                  <p class="why-item-text">We build setups intended to remain effective over time, reducing the need for constant rebuilding or reactive fixes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-content">
+            <h3 class="contact-title"><span class="bg">Discuss</span> Your Marketing and Digital Setup</h3>
+            <p class="contact-text">If you are looking to improve digital marketing performance or strengthen the systems that support your marketing activities, Carfolisia provides structured technical and marketing support tailored to your business needs</p>
+            <button class="contact-btn"> Talk to Us
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 7L17 17M17 17V7M17 17H7" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-line" style="padding-bottom: 40px; border-bottom: 1px solid rgba(255, 255, 255, 0.20);">
+            <div class="footer-col">
+              <img src="./src/images/footer-logo.png" width="423" height="109" alt="" class="footer-logo">
+            </div>
+            <div class="footer-col">
+              <p class="footer-contact">Contact Us:</p>
+              <p class="footer-email">info@carfolisia.com</p>
+            </div>
+            <div class="footer-col">
+              <p class="footer-contact">Contact Us:</p>
+              <p class="footer-address">Office 4, 10/F, Kwan Chart TowerNo. 6 Tonnochy Road, Wan Chai, Hong Kong</p>
+            </div>
+          </div>
+          <div class="footer-line">
+            <p class="copyright">© 2026 CARFOLISIA LIMITED </p>
+            <a href="./src/politic.html" class="privacy">Privacy Policy. All Rights Reserved</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script> -->
+  </body>
+</html>

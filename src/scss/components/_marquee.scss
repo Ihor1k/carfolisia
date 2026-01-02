@@ -1,0 +1,58 @@
+.marquee {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 315px;
+    // position: relative;
+    /* опціонально — невелика тінь або фон */
+    @media screen and (max-width: 480px) {
+        margin-top: 400px;   
+    }
+  }
+  
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scrollText 25s linear infinite;
+    
+  }
+  
+  .marquee-text {
+    display: inline-block;
+    padding-right: 2rem; /* відстань між повтореннями */
+    -webkit-text-stroke-width: 1.5px;
+    color: transparent;
+    -webkit-text-stroke-color: var(--neutral-grey-blu, #7F8D9E);
+    font-family: Urbanist;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 110px */
+    // color: transparent; /* щоб видно було лише обведення */
+    white-space: nowrap;
+    padding-bottom: 5px;
+  }
+  
+  /* 🔁 плавна безшовна анімація */
+  @keyframes scrollText {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  
+  /* 📱 адаптив */
+  @media (max-width: 480px) {
+    .marquee-text {
+      font-size: 90px;
+      padding-right: 2rem;
+    }
+  
+    .marquee-track {
+      animation: scrollText 20s linear infinite;
+    }
+  }
+  
