@@ -29,7 +29,7 @@
     animation: fadeIn 0.3s ease;
     @media screen and (max-width: 480px) {
         padding: 16px;  
-        height: 70%;
+        // height: 70%;
         width: 97%;
     }
   }
@@ -192,7 +192,8 @@ line-height: 120%; /* 19.2px */
     transition: all 300ms ease-in-out;
     opacity: .6;
     @media screen and (max-width: 480px) {
-      height: 57.2px;   
+      height: 57.2px;  
+      padding: 8px 24px; 
     }
   }
 

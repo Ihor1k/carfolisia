@@ -364,7 +364,6 @@ body.menu-open {
 @media screen and (max-width: 480px) {
   .popup {
     padding: 16px;
-    height: 70%;
     width: 97%;
   }
 }
@@ -505,6 +504,7 @@ body.menu-open {
 @media screen and (max-width: 480px) {
   .popup-form textarea {
     height: 57.2px;
+    padding: 8px 24px;
   }
 }
 
